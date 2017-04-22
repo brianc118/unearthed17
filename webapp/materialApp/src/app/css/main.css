@@ -1,0 +1,142 @@
+@charset "UTF-8";
+body {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0px; }
+
+.material-nav {
+  background-color: #1976D2 !important; }
+
+/* ########################
+Top Tabs
+########################### */
+.employee-profile {
+  background-color: #64B5F6; }
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem; }
+
+.employee-tab {
+  background-color: #64B5F6 !important; }
+
+/* ########################
+Meta Overview
+########################### */
+.tab-container {
+  margin: 1rem; }
+
+.overview-padding {
+  margin-bottom: 2rem; }
+
+.CircularProgressbar {
+  height: 300px;
+  width: 300px; }
+
+.rc-progress-circle-path {
+  stroke: #2196F3 !important; }
+
+.meta-info p span {
+  font-size: 1rem;
+  color: #E040FB; }
+
+.meta-info {
+  flex: 3 3; }
+
+.stat-box {
+  justify-content: space-between;
+  padding: 0.3rem;
+  margin: 0rem 0.2rem;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #BBDEFB;
+  display: flex;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  align-items: center; }
+
+.stat-box p {
+  margin: 0;
+  float: left; }
+
+.stat-box div {
+  float: right; }
+
+.stat-box p span {
+  color: #E040FB; }
+
+.safe-percent-text {
+  position: absolute;
+  top: 1.8rem;
+  width: 6rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: #2196F3; }
+
+/* ########################
+Bottom tabs
+########################### */
+.overview-tabs > div {
+  background-color: #fff !important; }
+
+.overview-tab {
+  background-color: #FFFFFF !important; }
+
+/* ########################
+Overall
+########################### */
+.float-left-fifty {
+  float: left;
+  width: 50%; }
+
+ul {
+  padding-left: 1rem; }
+
+.good-job li {
+  margin-top: 0.5rem;
+  list-style: none; }
+
+.good-job li:before {
+  color: #00c853;
+  font-size: 1.5rem;
+  content: '✓ '; }
+
+.bad-job li {
+  margin-top: 0.5rem;
+  list-style: none; }
+
+.bad-job li:before {
+  color: #d50000;
+  padding-top: -5rem;
+  font-size: 1.5rem;
+  content: '✗ '; }
+
+.safe-data .stat-box {
+  margin: 1rem 0.5rem;
+  margin-top: 0;
+  font-size: 0.8rem; }
+
+.graphs {
+  margin: 2rem 1rem; }
+  .graphs .graph-title {
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 2rem;
+    padding-bottom: 0;
+    margin-bottom: -0.5rem; }
+
+.graphs img {
+  padding: 1rem;
+  width: 90%; }
+
+.trip-card {
+  margin: 1rem; }
+
+/*# sourceMappingURL=main.css.map */

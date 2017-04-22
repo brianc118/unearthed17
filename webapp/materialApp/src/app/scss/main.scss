@@ -1,0 +1,158 @@
+$primary-color-dark:   #1976D2;
+$primary-color-300: #64B5F6;
+$primary-color:        #2196F3;
+$primary-color-light:  #BBDEFB;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #E040FB;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+$error-color: #d50000;
+$correct-color: #00c853;
+
+body {
+  font-size: 13px;
+  line-height: 20px;
+  margin: 0px;
+}
+.material-nav {
+  background-color: $primary-color-dark !important;
+}
+/* ########################
+Top Tabs
+########################### */
+.employee-profile {
+  background-color: $primary-color-300;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.employee-tab {
+  background-color: $primary-color-300 !important;
+}
+.profile-header {
+
+}
+
+/* ########################
+Meta Overview
+########################### */
+.tab-container {
+  margin: 1rem;
+}
+.overview-padding {
+  margin-bottom: 2rem;
+}
+.CircularProgressbar {
+  height: 300px;
+  width: 300px;
+}
+.rc-progress-circle-path{
+  stroke: $primary-color !important;
+}
+.meta-info p span {
+  font-size: 1rem;
+  color: $accent-color
+}
+.meta-info {
+  flex: 3 3;
+}
+.stat-box {
+  justify-content: space-between;
+  padding: 0.3rem;
+  margin: 0rem 0.2rem;
+  border-radius: 2px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #BBDEFB;
+  display: flex;
+  width: 15rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  align-items: center;
+}
+.stat-box p {
+  margin: 0;
+  float: left; }
+
+.stat-box div {
+  float: right; }
+
+.stat-box p span {
+  color: #E040FB; }
+
+.safe-percent-text {
+    position: absolute;
+    top: 1.8rem;
+    width: 6rem;
+    text-align: center;
+    font-size: 1.5rem;
+    color: $primary-color;
+}
+/* ########################
+Bottom tabs
+########################### */
+.overview-tabs > div {
+  background-color: #fff !important;
+}
+.overview-tab {
+  background-color: $primary-color-text !important;
+}
+/* ########################
+Overall
+########################### */
+.float-left-fifty {
+  float:left;
+  width: 50%;
+}
+ul {
+  padding-left: 1rem;
+}
+.good-job li {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+.good-job li:before {
+    color: $correct-color;
+    font-size: 1.5rem;
+    content: '✓ ';
+}
+.bad-job li {
+  margin-top: 0.5rem;
+  list-style: none;
+}
+.bad-job li:before {
+    color: $error-color;
+    padding-top: -5rem;
+    font-size: 1.5rem;
+    content: '✗ ';
+}
+
+.safe-data .stat-box {
+  margin: 1rem 0.5rem;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+.graphs {
+  margin: 2rem 1rem;
+.graph-title {
+  font-size: 1.5rem;
+  font-weight: 200;
+  line-height: 2rem;
+  padding-bottom: 0;
+  margin-bottom: -0.5rem;
+}
+}
+.graphs img{
+  padding: 1rem;
+  width: 90%;
+}
+.trip-card {
+  margin: 1rem;
+}
