@@ -307,30 +307,16 @@ print('Total trip ids = {}'.format(len(driverTrips.keys())))
 print('Total driver ids = {}'.format(len(drivers.keys())))
 print('Intersect = {}'.format(len(set(list(driverTrips.keys())).intersection(list(drivers.keys())))))
 
-count = 0
-for driver_id in drivers.keys():
-    driver = drivers[driver_id];
-    for k in emptyInfo.keys():
-        if k not in driver:
-            continue
+for driverID,eventTypes in drivers.iteritems():
+    if driverID not in driverTrips:
+        continue
 
-        for time in driver[k]:
-            if driver_id not in driverTrips:
-                continue
-
-            for trip in driverTrips[driver_id]:
-                if trip['start'] <= time and time <= trip['end']:
-                    trip[k].append(time)
-                    count += 1
+    for eventType,eventList in eventTypes.iteritems():
+        for eventTime in eventList:
+            for trip in driverTrips[driverID]:
+                if trip['start'] <= eventTime and eventTime <= trip['end']:
+                    trip[eventType].append(eventTime)
                     break
 
-print(len(list(driverTrips.keys())), count)
-
-# print("DUMPING TRIP")
-
-# import pickle
-
-# with open('trip.pickle', 'wb') as handle:
-#     pickle.dump(trip, handle, protocol=pickle.HIGHEST_PROTOCOL)
-
-print("DONE")
+for eventType in emptyInfo.keys():
+    print('{0}: {1}'.format(eventType, len([1 for event in trip[eventType] for trip in driverTrips[349]])))
